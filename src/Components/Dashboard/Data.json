@@ -1,0 +1,36 @@
+[
+    {
+        "name" : "Home",
+        "icon" : "fa-solid fa-house-flag fa-lg",
+        "linkto" :  "dashboard"
+    },
+    {
+        "name" : "Assets",
+        "icon" : "fa-solid fa-hourglass fa-lg",
+        "linkto" :  "assets"
+    },{
+        "name" : "Licenses",
+        "icon" : "fa-solid fa-id-card fa-lg",
+        "linkto" :  "dashboard"
+    },{
+        "name" : "Accessories",
+        "icon" : "fa-regular fa-keyboard fa-lg",
+        "linkto" :  "dashboard"
+    },{
+        "name" : "Consumables",
+        "icon" : "fa-solid fa-droplet fa-lg",
+        "linkto" :  "dashboard"
+    },{   
+        "name" : "Contact",
+        "icon" : "fa-solid fa-address-book fa-lg",
+        "linkto" :  "dashboard"
+    },{
+        "name" : "Settings",
+        "icon" : "fa-solid fa-gears fa-lg",
+        "linkto" :  "dashboard"
+    },{
+        "name" : "Analytics",
+        "icon" : "fa-solid fa-square-poll-vertical fa-lg",
+        "linkto" :  "dashboard"
+    }
+]
