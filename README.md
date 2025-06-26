@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+🗃️ Asset Management System
+A full-stack Asset Management System that allows users to register, log in, add assets, and manage them via a responsive UI. Built using React.js, Node.js, Express.js, and MongoDB.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+📌 Features
+🔐 User Registration & Secure Login (with hashed passwords using bcrypt)
 
-## Available Scripts
+🧾 Add, View & Manage Assets
 
-In the project directory, you can run:
+🧑‍💼 User Profile with Password Change functionality
 
-### `npm start`
+📦 REST API using Express & MongoDB
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🎨 Styled using Material-UI (MUI) for modern, responsive design
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🛠️ Tech Stack
+Frontend:
 
-### `npm test`
+React.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Material UI (MUI)
 
-### `npm run build`
+Backend:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Node.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Express.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+MongoDB with Mongoose
 
-### `npm run eject`
+Bcrypt for password hashing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+CORS enabled for frontend-backend communication
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🧑‍💻 Installation Steps
+📁 Clone the Repository
+git clone https://github.com/your-username/asset-management-system.git
+cd asset-management-system
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🔧 Backend Setup
+Navigate to the backend folder:
+cd backend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Install dependencies:
+npm install
 
-## Learn More
+Start MongoDB locally or set up MongoDB Atlas. Then run:
+node index.js
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🌐 Frontend Setup
+Navigate to the frontend folder:
+cd frontend
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Install dependencies:
+npm install
 
-### Code Splitting
+Start the React app:
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+📂 Folder Structure
 
-### Analyzing the Bundle Size
+asset-management-system/
+├── backend/
+│   ├── models/
+│   ├── index.js
+│   └── ...
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── App.js
+│   │   ├── Context.js
+│   │   └── ...
+│   └── package.json
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🧪 API Endpoints
+Method	Route	Description
+POST	/register	Register new user
+POST	/	Login
+POST	/assets	Create new asset
+GET	/assetDetails	Fetch all assets
+GET	/profile?email=	Get user profile
+POST	/profile	Update password
 
-### Making a Progressive Web App
+🔐 Security Features
+Passwords are hashed using bcrypt before storing.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Sensitive data is validated and handled securely.
 
-### Advanced Configuration
+CORS configured to accept requests only from allowed origins.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🖼️ Screenshots
+View screenshot folder.
 
-### Deployment
+📌 Future Improvements
+Add role-based access control (admin/user)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Export asset data to Excel/PDF
 
-### `npm run build` fails to minify
+Search and filter functionality
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
